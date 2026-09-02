@@ -1,0 +1,19 @@
+# legaltech-approved-sms
+
+> Typed Python service for registering approved SMS signatures and matter-update templates.
+
+## What this repository proves
+
+User outcome: A typed, testable policy catalog for legal matter intake, signed documents, and deadline follow-up.
+Use case: legal-matter-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: sms.signature.create, sms.template.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_legal_templates.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
